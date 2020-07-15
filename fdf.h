@@ -33,5 +33,6 @@ typedef struct
 void    read_file(char *file_name, fdf *data);
 void    bresenham(float x, float y, float x1, float y1, fdf *data);
 void    draw(fdf *data);
+void    print_menu(fdf data);
 
 #endif
