@@ -12,7 +12,7 @@
 
 NAME=libft.a
 
-SRCS=*.c ft_printf/*.c array_int/*.c
+SRCS=*.c ft_printf/*.c
 
 OBJECTS=*.o
 

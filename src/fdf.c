@@ -18,7 +18,7 @@ void	set_default(t_data *param)
 	param->z_scale = 1;
 	param->is_isometric = 1;
 	param->angle = 0.523599;
-	param->win_x = 2000;
+	param->win_x = 1500;
 	param->win_y = 1000;
 	param->shift_x = param->win_x / 3;
 	param->shift_y = param->win_y / 3;

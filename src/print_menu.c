@@ -22,6 +22,4 @@ void	print_menu(t_data param)
 	mlx_string_put(param.mlx_ptr, param.win_ptr, 10, 20, 0x03fc35, menu);
 	menu = "8, 2: z-scale; 4, 6: rotation";
 	mlx_string_put(param.mlx_ptr, param.win_ptr, 10, 35, 0x03fc35, menu);
-	menu = "f: full screen mode";
-	mlx_string_put(param.mlx_ptr, param.win_ptr, 10, 50, 0x03fc35, menu);
 }

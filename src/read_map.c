@@ -42,7 +42,7 @@ t_data	**memory_allocete(char *file_name)
 	char	*line;
 
 	if ((fd = open(file_name, O_RDONLY, 0)) <= 0)
-		ft_error("file does not exist");
+		write(1, "file does not exist\n", 20);
 	get_next_line(fd, &line);
 	x = ft_wdcounter(line, ' ');
 	free(line);
