@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   read_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fself <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: fself <fself@student.21-school.ru>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/19 19:43:33 by fself             #+#    #+#             */
-/*   Updated: 2020/07/19 19:43:36 by fself            ###   ########.fr       */
+/*   Updated: 2020/07/23 11:38:13 by fself            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ t_data	**memory_allocete(char *file_name)
 	char	*line;
 
 	if ((fd = open(file_name, O_RDONLY, 0)) <= 0)
-		write(1, "file does not exist\n", 20);
+		ft_error("file does not exist");
 	get_next_line(fd, &line);
 	x = ft_wdcounter(line, ' ');
 	free(line);
